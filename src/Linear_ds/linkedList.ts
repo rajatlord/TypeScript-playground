@@ -55,6 +55,45 @@ class LinkedList {
     this.head.next = temp;
   }
 
+  // insert at end
+  insertAtEnd(data:number):void{
+    const newNode = new ListNode(data);
+
+    if(!this.head){
+      this.head = newNode;
+      return
+    }
+
+    let currnet = this.head;
+
+    while(currnet.next !== null){
+      currnet = currnet.next;
+    }
+
+    currnet.next = newNode
+  }
+  // insert at poistion or given index
+  insertAtPosition(data:number, poistion:number):void{
+
+    if(poistion === 0 ){
+      this.insertHead(data);
+      return
+    }
+    const newNode = new ListNode(data);
+    let currnet = this.head;
+    let index = 0;
+
+    while(currnet !== null && index < poistion - 1){
+      currnet = currnet.next;
+      index++;
+    }
+
+    if(currnet !== null){
+      newNode.next = currnet.next;
+      currnet.next = newNode;
+    }
+  }
+
   // finding in the linkedlist
   public find(value:number):boolean{
     let temp = this.head;
@@ -66,6 +105,16 @@ class LinkedList {
     }
     return false;
   }
+
+  // traverse 
+  traverse():void{
+    let current = this.head;
+
+    while(current !== null){
+      console.log(current.data);
+      current = current.next;
+    }
+  }
 }
 
 let nodeOne = new ListNode(5);
@@ -76,12 +125,23 @@ nodeOne.next = nodeTwo;
 nodeTwo.next = nodeThree;
 // let nodeFour = new ListNode(30);
 let linkedList = new LinkedList(nodeOne);
-linkedList.pushNode(30)
+// linkedList.pushNode(30)
 
 // inserting head
-linkedList.insertHead(38);
+// linkedList.insertHead(38);
 
-console.log(linkedList);
-console.log(linkedList.length());
-console.log("is 38 in the list? ",linkedList.find(38));
+// console.log(linkedList);
+// console.log(linkedList.length());
+// console.log("is 38 in the list? ",linkedList.find(38));
+// linkedList.insertAtEnd(100)
+linkedList.insertAtPosition(6, 3);
+console.log(linkedList.traverse());
 // linkedList.print();
+
+// left to implement
+// Delete start
+// Delete end	
+// Delete value
+// Search	
+// Access index
+// Reverse
