@@ -21,6 +21,11 @@ import { reverseString } from "./src/basic/Level-3/reverseString.ts";
 import { removeDuplicates } from "./src/basic/Level-3/removeDuplicates.ts";
 import { TwoSumSortedArr } from "./src/basic/Level-3/TwoSumSortedArr.ts";
 import { mergeTwoSorted } from "./src/basic/Level-3/mergeTwoSorted.ts";
+import { maxProfit } from "./src/opsInterview/bestTimeTosell.ts";
+import { twoSum } from "./src/opsInterview/twoSum.ts";
+import { containsDuplicate } from "./src/opsInterview/containsDuplicate.ts";
+import { isAnagram } from "./src/opsInterview/validAnagram.ts";
+import { isPalindrome } from "./src/opsInterview/validPalindrome.ts";
 // import { removeDuplicate } from "./src/basic/Level-3/removeDuplicate.js";
 // console.log(findSmallest([5, 2, 9, 1, 7]));
 // console.log(findSmallest([10, 20, 30]));
@@ -39,9 +44,9 @@ import { mergeTwoSorted } from "./src/basic/Level-3/mergeTwoSorted.ts";
 // console.log(isSorted([1, 2, 3, 5]));
 
 // console.log(removeDuplicate([1,1,2,2,3,4]));
-// 
+//
 // console.log("moving zeros to the end");
-// console.log(moveZeros([1,0,2,0,3,4]));
+console.log(moveZeros([1,0,2,0,3,4]));
 // console.log(CountEvenOddNumber([1,3,5,7,2,4]));
 // console.log(FindMaximumDifferenceBetweenTwoElements([1,2,7,8,9,10]));
 // console.log(RotateAarrayBy1Position([1,2,7,8,9,10]));
@@ -54,5 +59,12 @@ import { mergeTwoSorted } from "./src/basic/Level-3/mergeTwoSorted.ts";
 // console.log(reverseString("Hello"));
 // console.log(removeDuplicates([1,1,2,2,3,4]));
 // console.log(TwoSumSortedArr([1,2,3,4,5], 8));
-console.log("merging array");
-console.log(mergeTwoSorted([1,2,3],3,[5,6,4], 3));
+// console.log("merging array");
+// console.log(mergeTwoSorted([1, 2, 3], 3, [5, 6, 4], 3));
+
+// console.log(maxProfit([7, 1, 5, 3, 6, 4]));
+// console.log(twoSum([2, 7, 11, 15], 9));
+// console.log("running duplicate")
+// console.log(containsDuplicate([2, 7, 11, 1]));
+// console.log(isAnagram("anagram","nagaram"));
+// console.log(isPalindrome("A man, a plan, a canal: Panama"));
