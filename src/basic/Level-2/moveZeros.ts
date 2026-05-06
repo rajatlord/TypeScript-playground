@@ -1,20 +1,33 @@
 export function moveZeros(arr: number[]): number[] {
-  let i = 0;
-  for (let j = 0; j < arr.length; j++) {
-      console.log("before swap",arr);
-    if (arr[j] !== 0) {
-        console.log("before swap arr[j]",arr[j]);
-        let temp = arr[i];
-        console.log("before swap arr[i]",arr[i]);
-        arr[i] = arr[j]!;
-        console.log("after swap arr[i]",arr[i]);
-        arr[j] = temp!;
-        console.log("after swap arr[j]",arr[j]);
-        console.log(arr[j]);
-        i++;
-        console.log(i);
-        console.log(arr);
+  // let i = 0;
+  // for (let j = 0; j < arr.length; j++) {
+  //   if (arr[j] !== 0) {
+  //       let temp = arr[i];
+  //       arr[i] = arr[j]!;
+  //       arr[j] = temp!;
+  //       i++;
+  //   }
+  // }
+  // return arr;
+
+  const temp: number[] = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== 0) {
+      temp.push(arr[i]!);
     }
   }
+
+  let nz = temp.length;
+
+  for (let i = 0; i < nz; i++) {
+    arr[i] = temp[i]!;
+  }
+
+  for (let i = nz; i < arr.length; i++) {
+    arr[i] = 0;
+  }
+
   return arr;
 }
+// [1,2,3,0]
