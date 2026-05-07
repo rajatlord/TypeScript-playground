@@ -26,6 +26,7 @@ import { twoSum } from "./src/opsInterview/twoSum.ts";
 import { containsDuplicate } from "./src/opsInterview/containsDuplicate.ts";
 import { isAnagram } from "./src/opsInterview/validAnagram.ts";
 import { isPalindrome } from "./src/opsInterview/validPalindrome.ts";
+import { hello } from "./src/opInterview1/test.ts";
 // import { removeDuplicate } from "./src/basic/Level-3/removeDuplicate.js";
 // console.log(findSmallest([5, 2, 9, 1, 7]));
 // console.log(findSmallest([10, 20, 30]));
@@ -46,7 +47,7 @@ import { isPalindrome } from "./src/opsInterview/validPalindrome.ts";
 // console.log(removeDuplicate([1,1,2,2,3,4]));
 //
 // console.log("moving zeros to the end");
-console.log(moveZeros([1,0,2,0,3,4]));
+// console.log(moveZeros([1,0,2,0,3,4]));
 // console.log(CountEvenOddNumber([1,3,5,7,2,4]));
 // console.log(FindMaximumDifferenceBetweenTwoElements([1,2,7,8,9,10]));
 // console.log(RotateAarrayBy1Position([1,2,7,8,9,10]));
@@ -68,3 +69,5 @@ console.log(moveZeros([1,0,2,0,3,4]));
 // console.log(containsDuplicate([2, 7, 11, 1]));
 // console.log(isAnagram("anagram","nagaram"));
 // console.log(isPalindrome("A man, a plan, a canal: Panama"));
+
+console.log(hello([10,2,15,3,5,1]));
